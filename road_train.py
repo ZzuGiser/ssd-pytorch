@@ -56,7 +56,9 @@ if __name__ == "__main__":
         cudnn.benchmark = True
         net = net.cuda()
 
-    annotation_path = 'road_train.txt'
+    # annotation_path = 'road_train.txt'
+    annotation_path = '../faster-rcnn-pytorch/train_road_faster_rcnn/faster_rcnn_road_sample.txt'
+
     with open(annotation_path) as f:
         lines = f.readlines()
     np.random.seed(10101)
